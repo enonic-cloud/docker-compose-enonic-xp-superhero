@@ -1,4 +1,4 @@
-FROM enonic/xp-app:6.6.0
+FROM enonic/xp-app:6.7.0
 
 #ENV JAVA_OPTS "-Xms1024M -Xmx1024M"
 
@@ -11,8 +11,8 @@ RUN cp -r $XP_ROOT/home.org $XP_ROOT/home
 COPY deploy/* $XP_ROOT/home/deploy/
 
 # automatic download superhero module from repo.enonic.net
-ENV SUPERHERO_VERSION 1.5.0
-RUN wget -O $XP_ROOT/home/deploy/superhero-$SUPERHERO_VERSION.jar http://repo.enonic.com/public/com/enonic/app/superhero/$SUPERHERO_VERSION/superhero-$SUPERHERO_VERSION.jar
+#ENV SUPERHERO_VERSION 1.5.0
+#RUN wget -O $XP_ROOT/home/deploy/superhero-$SUPERHERO_VERSION.jar http://repo.enonic.com/public/com/enonic/app/superhero/$SUPERHERO_VERSION/superhero-$SUPERHERO_VERSION.jar
 
 
 COPY config/* $XP_ROOT/home/config/
