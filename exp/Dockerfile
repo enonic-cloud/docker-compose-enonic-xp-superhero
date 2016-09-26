@@ -1,6 +1,6 @@
 FROM enonic/xp-app:6.7.0
 
-ENV JAVA_OPTS "-Xms1600M -Xmx1600M"
+ENV JAVA_OPTS "-Xms1G -Xmx1G"
 
 
 USER root
