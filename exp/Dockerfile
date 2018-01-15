@@ -1,4 +1,4 @@
-FROM enonic/xp-app:6.13
+FROM enonic/xp-app:6.13.1
 
 ENV JAVA_OPTS "-Xms1G -Xmx1G"
 
